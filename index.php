@@ -28,16 +28,9 @@
     </ul>
     <h2>Tabella Province</h2>
     <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "cap_provincia_db";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Connessione fallita: " . $conn->connect_error);
-    }
+    
+    include "connection.php";
+    
 
     $sql = "SELECT * FROM cap_provincia";
     $result = $conn->query($sql);

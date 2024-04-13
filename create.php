@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cap_provincia_db";
-
-// Creazione della connessione
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica della connessione
-if ($conn->connect_error) {
-    die("Connessione fallita: " . $conn->connect_error);
-}
+include "connection.php";
 
 // Verifica dei parametri nell'URL
 if(isset($_GET['new_cap']) && isset($_GET['new_provincia'])) {

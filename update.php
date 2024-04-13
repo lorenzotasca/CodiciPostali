@@ -1,14 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cap_provincia_db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connessione fallita: " . $conn->connect_error);
-}
+include "connection.php";
 
 if(isset($_GET['id']) && isset($_GET['new_cap']) && isset($_GET['new_provincia'])) {
     $id = $_GET['id'];
