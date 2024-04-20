@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comandi CAP e Provincia</title>
     <style>
+        body{
+            background-color="black";
+        }
         table {
             border-collapse: collapse;
             width: 50%;
@@ -20,11 +23,11 @@
 <body>
 <h2>Comandi disponibili:</h2>
     <ul>
-        <li>Ricerca per CAP: <code>http://localhost/cap/search.php?search_cap=XXXXX</code></li>
-        <li>Ricerca per Provincia: <code>http://localhost/cap/search.php?search_provincia=Nome_Provincia</code></li>
-        <li>Modifica Record: <code>http://localhost/cap/update.php?id=ID_RECORD&new_cap=Nuovo_CAP&new_provincia=Nuova_Provincia</code></li>
-        <li>Elimina Record: <code>http://localhost/cap/delete.php?id=ID_RECORD</code></li>
-        <li>Aggiungi Record: <code>http://localhost/cap/create.php?new_cap=Nuovo_CAP&new_provincia=Nuova_Provincia</code></li>
+        <li>Ricerca per CAP: <code>search.php?search_cap=</code></li>
+        <li>Ricerca per Provincia: <code>search.php?search_provincia=</code></li>
+        <li>Modifica Record: <code>update.php?id=&new_cap=</code></li>
+        <li>Elimina Record: <code>delete.php?id=</code></li>
+        <li>Aggiungi Record: <code>create.php?new_cap=&new_provincia=</code></li>
     </ul>
     <h2>Tabella Province</h2>
     <?php
